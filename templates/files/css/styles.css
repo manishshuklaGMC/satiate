@@ -153,9 +153,10 @@ hr {
 #logo {
 	margin-top:18px;
 	width:auto;
-	height:76px;
+	height:20px;
+	bottom:-20px;
 	background:url(../images/logo.png) no-repeat;
-	background-size: 100% auto;
+	background-size: 80% auto;
 	display:block;
 }
 .page-title {
