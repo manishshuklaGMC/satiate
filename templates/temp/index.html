@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from www.omaxsecurityservices.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Jul 2018 11:42:43 GMT -->
+<head>
+<meta charset="utf-8">
+<title>SATIATE Security Services : ADMINISTRATION</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HTML Template best suited for business sites and portfolios" />
+<meta name="keywords" content="Some keywords that best describe your business" />
+<meta name="author" content="Creativusmouse" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="static/css/foundation.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+<!--link rel="stylesheet" href="files/css/styles.css"-->
+<link rel="icon" href="static/images/favicon.ico" />
+<link href="static/titan/css/jquery.titanlighbox.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="static/css/cubeportfolio.min.css">
+
+<!-- REVOLUTION BANNER CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="static/rs-plugin/css/settings.css" media="screen" />
+
+<!-- GOOGLE FONT - SOURCE SANS PRO -->
+<link href='../fonts.googleapis.com/css056a.css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+<link href="../fonts.googleapis.com/css3f04.css?family=Oswald" rel="stylesheet">
+
+<!-- JAVASCRIPT FOUNDATION (COMPRESSED) -->
+<script src="static/js/foundation.min.js"></script>
+<script src="static/js/modernizr.foundation.js"></script>
+<script src="static/js/app.js"></script>
+<script src="ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.html"></script>
+<script src="static/js/jquery.min.js"></script>
+
+<!-- JQUERY KENBURN SLIDER  -->
+<script src="static/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script src="static/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- THEMES PANEL -->
+<link rel="stylesheet" href="static/themes_panel/farbtastic/farbtastic.css">
+<link rel="stylesheet" href="static/themes_panel/themes_panel.css">
+<link rel="stylesheet" href="static/css/colors.css">
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<!-- THEMES PANEL -->
+<div id="themes_panel">
+  <div id="themes_menu">
+    <div class="segment">
+      <h6>Theme Colour</h6>
+      <ul class="theme buttons">
+        <li><a href="#" title="purple"><img src="static/themes_panel/buttons/theme_purple.jpg" alt="" /></a></li>
+        <li><a href="#" title="pink"><img src="static/themes_panel/buttons/theme_pink.jpg" alt="" /></a></li>
+        <li><a href="#" title="blue"><img src="static/themes_panel/buttons/theme_blue.jpg" alt="" /></a></li>
+        <li><a href="#" title="green"><img src="static/themes_panel/buttons/theme_green.jpg" alt="" /></a></li>
+        <li><a href="#" title="orange"><img src="static/themes_panel/buttons/theme_orange.jpg" alt="" /></a></li>
+        <li><a href="#" title="red"><img src="static/themes_panel/buttons/theme_red.jpg" alt="" /></a></li>
+      </ul>
+    </div>
+    <div class="segment"> Background
+      <div class="pick_color"> <a class="pick_color_btn">
+        <form>
+          <input type="text" id="color" name="color" readonly value="#ccc" />
+        </form>
+        </a> </div>
+    </div>
+    <div class="segment noborder"> <a class="reset_btn" href="#">Reset</a> </div>
+  </div>
+  <div id="toggle_button"><a href="#"></a></div>
+  <div id="colorpicker"></div>
+</div>
+<!-- END THEMES PANEL --> 
+
+<!-- HEADER -->
+<div id="header">
+  <div class="row">
+    <div class="four columns"> <a href="index.html" title="SATIATE Security Services" id="logo"></a> </div>
+    
+    <!-- NAVIGATION -->
+    <div class="eight columns">
+      <nav class="top-bar">
+      <p class="right"><img src="static/images/toll-free-no.png" ></p>
+        <ul>
+          <!-- RESPONSIVE NAVIGATION -->
+          <li class="name">
+            <h1><a href="#"> Please select your page</a></h1>
+          </li>
+          <li class="toggle-topbar"><a href="#"></a></li>
+          <!-- END RESPONSIVE NAVIGATION -->
+        </ul>
+        <section>
+          <ul class="right">
+                        <li> <a class="active" href="index.html">Home</a> </li>
+            <li> <a class="" href="{{ url_for('aboutus')}}">About Us</a></li>
+            <li> <a class="" href="/services.html">Services</a></li>
+            <li> <a class="" href="/admin.html">Administration</a> </li>
+            <li> <a class="" href="/career.html">Career</a> </li>
+            <li> <a class="" href="/contact.html">Contact</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+    <!-- END NAVIGATION -->
+    <div class="shadow-down"></div>
+  </div>
+</div>
+<!--END HEADER --><!-- SLIDER -->
+
+<div class="fullwidthbanner-container">
+  <div class="fullwidthbanner">
+    <ul>
+      <!-- THE FIRST SLIDE -->
+      <li data-transition="papercut" data-slotamount="15" data-masterspeed="300" data-delay="3000" data-thumb="static/images/thumbs/thumb2.jpg"> <img src="static/images/slides/slide1.jpg" > </li>
+      
+      <!-- THE SECOND SLIDE -->
+      <li data-transition="3dcurtain-vertical" data-slotamount="10" data-masterspeed="300" data-delay="3000" data-thumb="static/images/thumbs/thumb5.jpg"> <img src="static/images/slides/slide2.jpg" > </li>
+      
+      <!-- THE THIRD SLIDE -->
+      <li data-transition="cube" data-slotamount="10" data-masterspeed="300" data-delay="3000" data-thumb="static/images/thumbs/thumb5.jpg"> <img src="static/images/slides/slide3.jpg" > </li>
+      
+      <!-- THE FOURTH SLIDE -->
+      <li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="3000" data-thumb="images/thumbs/thumb4.jpg"><img src="static/images/slides/slide4.jpg" > </li>
+      
+      <!-- THE FIFTH SLIDE -->
+      <li data-transition="papercut" data-slotamount="18" data-masterspeed="300" data-delay="3000" data-thumb="images/thumbs/thumb4.jpg"><img src="static/images/slides/slide5.jpg" > </li>
+    </ul>
+    <div class="tp-bannertimer"></div>
+  </div>
+</div>
+<!-- END SLIDER -->
+<div class="container main_content">
+  <!--<div class="row">
+    <div class="twelve columns client">
+      <div id="js-grid-clients" class="cbp cbp-l-grid-clients">
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-1.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-2.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-3.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-4.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-5.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-6.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-7.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-8.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-9.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-10.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-11.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-12.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-13.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-14.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-15.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-16.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-17.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-18.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-19.png" alt=""> </div>
+          </a> </div>
+        <div class="cbp-item"> <a href="#" class="cbp-caption">
+          <div class="cbp-caption-defaultWrap"> <img src="files/images/client-8.png" alt=""> </div>
+          </a> </div>
+      </div>
+    </div>
+  </div>-->
+  <div class="row">
+    <div class="twelve columns">
+      <h1 class="text-center"><span>Welcome to Satiate Security Services</span></h1>
+      <p class="text-center"> We, the OSS do not believe in or subscribe to the "warm body syndrome," which is contrary to and a very common practice in the contract security industry. That is, we do not offer or provide "warm bodies" to work in any security related function for any clients. Each of our security personnel are fully qualified, experienced and trained and mostly drawn from Para military. We do not maintain minimum or sub-standard wages for our employees. In order to provide our clients with superior, reliable, dependable and professional high quality services, we must hire and retain experienced and highly qualified security personnel and pay them well. </p>
+      <br />
+      <!-- Tabs -->
+      <dl class="tabs">
+        <dd class="active"><a href="#simple1">
+          <h3>Company profile</h3>
+          </a></dd>
+        <dd><a href="#simple2">
+          <h3>Management Team</h3>
+          </a></dd>
+        <dd><a href="#simple3">
+          <h3>Our Quality Policy</h3>
+          </a></dd>
+      </dl>
+      <ul class="tabs-content">
+        <li class="active" id="simple1Tab">
+          <p><strong>Satiate Security Services Private Limited is an ISO 9001-2008</strong> certified company lead by highly qualified professionals extracted from armed forces and private security agencies. This has been launched with a view to generate and provide well trained young and energetic personnel to afford desired safeguarding to private houses, firms, factories, vital installations and house keepings. We further introduce ourselves as the most professional security agency able to provide high quality services to the best satisfaction and requirement for our clients </p>
+        </li>
+        <li id="simple2Tab"> As Satiate Security Services Pvt. Ltd, we understand the security is a manpower business and appreciate the state and central role that personnel play in the delivery of better quality service. Our screening and hiring practices are designed to yield a human resource pool, which is superior to our competitors. The team ensures to provide Our clients and our employees with a single point of contract for responding to manage all their security/manpower needs in ordinary and emergency time, across India. </br >
+          Satiate Security Services Pvt. Ltd. Offers on-the-job training programs for all security personnel. Our commitment to training includes several customised, industry-specific programs. By training onsite, we can ensure the greatest level of quality security to our clients. We have our training centre at Lucknow and have ex-army and ex-paramilitary JCOs/ NCOs for imparting training. </li>
+        <li id="simple3Tab"> We as Satiate Security Services Pvt. Ltd. endeavour to recognise code of practice within the security industry. We ensure that our "service quality standard" is exactly what the client has defined and agreed in formal contract. </br >
+          The Directors of Management of Satiate Security Services Pvt. Ltd are fully committed to fulfil the requirements of better quality and remain fully aware of their job and responsibilities for the implementation of the quality assurance. Each staff member of the team is responsible for achieving the required level of quality in their security activity. </br >
+          Our goals are to consistently provide an outstanding service to our clients, ensuring that each client's requirements are always met and adhered to. This in turn, creates a positive business relationship between the client and the organisation. </li>
+      </ul>
+      <!-- End Tabs --> 
+      <br />
+    </div>
+  </div>
+</div>
+
+<!-- CIRCLES BLOCK -->
+<!-- END CIRCLES BLOCK --> 
+
+<!-- SMALL ICON BLOCK -->
+<div class="container small-icon-block main_content">
+  <div class="row">
+    <h1 class="text-center"><span>Services We Provide</span></h1>
+    <div class="three columns"> <img src="static/images/small_icon_1.png" alt="" />
+      <h5><a href="servicesa755.html?service=industrial#industry1">INDUSTRIAL SECURITY</a></h5>
+      <p>Security in the industrial infrastructures is a very critical one.</p>
+    </div>
+    <div class="three columns"> <img src="static/images/small_icon_2.png" alt="" />
+      <h5><a href="services3176.html?service=bank#industry1">BANK SECURITY</a></h5>
+      <p>Banking is incompetent without the security attributes. Security is one of the limbs of</p>
+    </div>
+    <div class="three columns"> <img src="static/images/small_icon_3.png" alt="" />
+      <h5><a href="services468f.html?service=hotel#industry1">HOTEL SECURITY</a></h5>
+      <p>Hotel is most probable place to hostilities that have nothing to do with a hotel.</p>
+    </div>
+    <div class="three columns"> <img src="static/images/small_icon_4.png" alt="" />
+      <h5><a href="services336a.html?service=hospital#industry1">HOSPITAL SECURITY</a></h5>
+      <p>Hospitals are often crowded with people and their relatives who come by their</p>
+    </div>
+    <div class="clear"></div>
+    <div class="three columns"> <img src="static/images/small_icon_5.png" alt="" />
+      <h5><a href="servicesa71e.html?service=vip#industry1">VIP PROTECTION</a></h5>
+      <p>The famous people or what is now commonly told with a name celebrities, have to</p>
+    </div>
+    <div class="three columns"> <img src="static/images/small_icon_6.png" alt="" />
+      <h5><a href="servicese193.html?service=education#industry1">EDUCATIONAL INSTITUTIONS SECURITY</a></h5>
+      <p>Colleges and teaching Institutes are not the most appropriate place for getting</p>
+    </div>
+    <div class="three columns"> <img src="static/images/small_icon_7.png" alt="" />
+      <h5><a href="services34b9.html?service=house#industry1">HOUSE KEEPING</a></h5>
+      <p>While people also trust dogs for this job, but honestly it is just a skeptical measure</p>
+    </div>
+    <div class="three columns"> <img src="static/images/small_icon_8.png" alt="" />
+      <h5><a href="servicesfb74.html?service=manpower#industry1">MANPOWER SERVICES</a></h5>
+      <p>Our Organization is best in offering well-versed, well –trained Man Power</p>
+    </div>
+  </div>
+</div>
+<!-- END SMALL ICON BLOCK -->
+<div class="row">
+  <div class="twelve columns">
+    <hr/>
+  </div>
+</div>
+<!-- FOOTER -->
+
+<div class="container footer">
+  <div class="row">
+    <div class="four columns">
+      <h5>Navigation</h5>
+      <div class="list-type-footer">
+        <ul>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="aboutus.html">About</a> </li>
+          <li> <a href="admin.html">Administration</a> </li>
+          <li> <a href="magazine.html">Magazine</a> </li>
+          <li> <a href="gallery.html">Gallery</a> </li>
+          <li> <a href="contact.html">Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="four columns">
+      <!--<h5>Latest Posts</h5>
+      <p><a href="single_post.html"> <img class="img_float_left" src="files/images/thumb_1.jpg" width="40" height="40" alt=
+      "" /> <strong>Nullam dictum felis eu</strong></a><br />
+        Lorem ipsum dolor sit amet.</p>
+      <p><a href="single_post.html"> <img class="img_float_left" src="files/images/thumb_2.jpg" width="40" height="40" alt=
+      "" /> <strong>Nullam dictum felis eut</strong></a><br />
+        Lorem ipsum dolor sit amet.</p>
+      <p><a href="single_post.html"> <img class="img_float_left" src="files/images/thumb_3.jpg" width="40" height="40" alt=
+      "" /> <strong>Nullam dictum felis eu</strong></a><br />
+        Lorem ipsum dolor sit amet.</p>-->
+    </div>
+    <div class="four columns">
+      <h5>Contact Us</h5>
+      <img class="img_float_left" src="static/images/footer_icon_1.png" alt="" />
+      <p> 0522-3075288, 0522-4956602 Fax No. 0522-3075294 </p>
+      <img class="img_float_left" src="static/images/footer_icon_2.png" alt="" />
+      <p>lucknow@Satiatesecurityservices.com</p>
+      <img src="static/images/footer_icon_3.png" alt="" class="img_float_left" />
+      <p class="tab"> <strong>A-Surajdeep Building, IInd Floor,</strong><br />
+        <strong> Jopling Road near Dainik Jagran Crossing</strong><br />
+        <strong>Lucknow (U.P.)</strong> </p>
+    </div>
+  </div>
+</div>
+<!-- END FOOTER --> 
+<!-- SUBFOOTER -->
+<div class="container subfooter">
+  <div class="row">
+    <div class="six columns">
+      <p> &#169; Copyright - Satiate Security Services -Designed by <a href="../www.cloud18.com/index.html" target="_blank">cloud18.com</a></p>
+    </div>
+    <div class="six columns">
+      <div class="large-social-block"> <a href="#"><span class="social dribbble"></span></a> <a href="#"><span class="social flickr"></span></a> <a href="#"><span class="social linkedin"></span></a> <a href="#"><span class="social google"></span></a> <a href="#"><span class="social twitter"></span></a> <a href="#"><span class="social facebook"></span></a> </div>
+    </div>
+  </div>
+</div>
+<!-- END SUBFOOTER -->
+ 
+<!-- load cubeportfolio --> 
+<script type="text/javascript" src="static/js/jquery.cubeportfolio.min.js"></script>
+
+<!-- init cubeportfolio --> 
+<script type="text/javascript" src="static/js/main.js"></script>
+
+<!-- JAVASCRIPT --> 
+<script type="text/javascript">// Slider JS
+				var tpj=jQuery;
+				tpj(document).ready(function() {
+				if (tpj.fn.cssOriginal!=undefined)
+					tpj.fn.css = tpj.fn.cssOriginal;
+					tpj('.fullwidthbanner').revolution(
+						{
+							delay:9000,
+							startwidth:1920,
+							startheight:500,
+
+							onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
+
+							thumbWidth:100,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+							thumbHeight:50,
+							thumbAmount:3,
+
+							hideThumbs:200,
+							navigationType:"none",					//bullet, thumb, none, both	 (No Shadow in Fullwidth Version !)
+							navigationArrows:"verticalcentered",		//nexttobullets, verticalcentered, none
+							navigationStyle:"round",				//round,square,navbar
+
+							touchenabled:"on",						// Enable Swipe Function : on/off
+							navOffsetHorizontal:0,
+							navOffsetVertical:20,
+							stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+							stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+							hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+							hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+							hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+							fullWidth:"on",
+							shadow:0								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+						});
+			});
+			</script> 
+<script src="ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.html"></script> 
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery.infieldlabel.min.js"></script>
+<script src="static/js/scripts.js"></script>
+<script src="static/js/app.js"></script>
+
+<!-- Titan Lightbox --> 
+<script src="static/titan/js/prettify.js"></script>
+<script src="static/titan/js/jquery.titanlighbox.js"></script> <!-- Themes Panel -->
+<script src="static/js/jquery.isotope.min.js"></script>
+<script>
+
+$(window).load(function(){
+    
+    var $container = $('#container');
+
+    $container.isotope({
+      itemSelector : '.element',
+      // disable resizing
+      resizable: false,
+      // set columnWidth to a percentage of container width
+      masonry: {
+        columnWidth: $container.width() / 12
+      },
+     });
+    
+    // update columnWidth on window resize
+    $(window).smartresize(function(){
+      $container.isotope({
+        // set columnWidth to a percentage of container width
+        masonry: {
+          columnWidth: $container.width() / 12
+        }
+      });
+    });
+      
+    
+      var $optionSets = $('#options .option-set'),
+          $optionLinks = $optionSets.find('a');
+
+      $optionLinks.click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+          return false;
+        }
+        var $optionSet = $this.parents('.option-set');
+        $optionSet.find('.selected').removeClass('selected');
+        $this.addClass('selected');
+  
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+        
+        return false;
+      });
+    
+  });
+</script>
+<script src="static/themes_panel/farbtastic/farbtastic.js"></script>
+<script src="static/themes_panel/themes_panel.js"></script>
+</body>
+<!-- Mirrored from www.omaxsecurityservices.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Jul 2018 11:45:40 GMT -->
+</html>
