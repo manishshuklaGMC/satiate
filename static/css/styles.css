@@ -287,7 +287,18 @@ header {
   .slider1 {
     width:100%;
     border-bottom:0px;
+	  max-height:500px !important;
   }
+
+  .fullwidthbanner-container {
+	width:100% !important;
+	position:relative;
+	padding:0;
+	max-height:500px !important;
+	overflow:hidden;
+	margin-bottom:0px;
+	border-bottom:8px #EAEAEA solid;
+}
 
 /* --------------------------------------------------------	*/
 /*	Navigation */
