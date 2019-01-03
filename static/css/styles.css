@@ -898,7 +898,7 @@ table {
 
 th {
   color:#fff;
-  background:#fda056;
+  background:#fda056;!important;
   border-radius:0px !important;
   border:1px solid #3b3b3b !important;
   font-weight:normal !important;
@@ -907,7 +907,7 @@ th {
 
 td {
   color:#83adff;
-  background:#fb8865;
+  background:#fb8865; !important;
   border-radius:0px !important;
   border:1px solid #3b3b3b !important;
   padding:15px 20px !important;
@@ -916,7 +916,7 @@ td {
 table a:hover{
   text-decoration:none;
 }
-        
+
 /* --------------------------------------------------------	*/
 /*  Forms  */
 /* --------------------------------------------------------	*/
